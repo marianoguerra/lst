@@ -11,36 +11,36 @@ general help
 
 ::
 
-	usage: lst [-h] {add,remove,purge,slice,head,tail,filter,export} ...
+        usage: lst [-h] {add,remove,purge,slice,head,tail,filter,export} ...
 
-	positional arguments:
-	  {add,remove,purge,slice,head,tail,filter,export}
-	    add                 add an element to a list
-	    remove              remove element from list
-	    purge               purge removed items from the file
-	    slice               show a slice of the list
-	    head                show the first N elements of the list
-	    tail                show the last N elements of the list
-	    filter              show elements that match the filter
+        positional arguments:
+          {add,remove,purge,slice,head,tail,filter,export}
+            add                 add an element to a list
+            remove              remove element from list
+            purge               purge removed items from the file
+            slice               show a slice of the list
+            head                show the first N elements of the list
+            tail                show the last N elements of the list
+            filter              show elements that match the filter
 
-	optional arguments:
-	  -h, --help            show this help message and exit
+        optional arguments:
+          -h, --help            show this help message and exit
 
 add command
 -----------
 
 ::
 
-	usage: lst add [-h] [-a | -i INDEX] [-t TAG [TAG ...]] LIST MSG [MSG ...]
+        usage: lst add [-h] [-a | -i INDEX] [-t TAG [TAG ...]] LIST MSG [MSG ...]
 
-	positional arguments:
-	  LIST
-	  MSG
+        positional arguments:
+          LIST
+          MSG
 
-	optional arguments:
-	  -h, --help            show this help message and exit
-	  -t TAG [TAG ...], --tags TAG [TAG ...]
-				tag message with specified tag
+        optional arguments:
+          -h, --help            show this help message and exit
+          -t TAG [TAG ...], --tags TAG [TAG ...]
+                                tag message with specified tag
 
 examples
 ::::::::
@@ -63,17 +63,17 @@ remove command
 
 ::
 
-	usage: lst remove [-h] [-a | -i INDEX [INDEX ...]] [-f] LIST
+        usage: lst remove [-h] [-a | -i INDEX [INDEX ...]] [-f] LIST
 
-	positional arguments:
-	  LIST
+        positional arguments:
+          LIST
 
-	optional arguments:
-	  -h, --help            show this help message and exit
-	  -a, --all             remove all elements from list
-	  -i INDEX [INDEX ...], --index INDEX [INDEX ...]
-				remove elements at index
-	  -f, --force           don't ask for confirmation
+        optional arguments:
+          -h, --help            show this help message and exit
+          -a, --all             remove all elements from list
+          -i INDEX [INDEX ...], --index INDEX [INDEX ...]
+                                remove elements at index
+          -f, --force           don't ask for confirmation
 
 examples
 ::::::::
@@ -114,14 +114,14 @@ purge command
 
 ::
 
-	usage: lst purge [-h] [-f] LIST
+        usage: lst purge [-h] [-f] LIST
 
-	positional arguments:
-	  LIST
+        positional arguments:
+          LIST
 
-	optional arguments:
-	  -h, --help   show this help message and exit
-	  -f, --force  don't ask for confirmation
+        optional arguments:
+          -h, --help   show this help message and exit
+          -f, --force  don't ask for confirmation
 
 examples
 ::::::::
@@ -147,18 +147,18 @@ slice command
 
 ::
 
-	usage: lst slice [-h] [-a] [-i] LIST BEGIN END STEP
+        usage: lst slice [-h] [-a] [-i] LIST BEGIN END STEP
 
-	positional arguments:
-	  LIST
-	  BEGIN
-	  END
-	  STEP
+        positional arguments:
+          LIST
+          BEGIN
+          END
+          STEP
 
-	optional arguments:
-	  -h, --help        show this help message and exit
-	  -a, --show-all    show removed elements too
-	  -i, --show-index  show the absolute index of the item
+        optional arguments:
+          -h, --help        show this help message and exit
+          -a, --show-all    show removed elements too
+          -i, --show-index  show the absolute index of the item
 
 examples
 ::::::::
@@ -203,16 +203,16 @@ head command
 
 ::
 
-	usage: lst head [-h] [-a] [-i] [-c COUNT] LIST
+        usage: lst head [-h] [-a] [-i] [-c COUNT] LIST
 
-	positional arguments:
-	  LIST
+        positional arguments:
+          LIST
 
-	optional arguments:
-	  -h, --help            show this help message and exit
-	  -a, --show-all        show removed elements too
-	  -i, --show-index      show the absolute index of the item
-	  -c COUNT, --count COUNT
+        optional arguments:
+          -h, --help            show this help message and exit
+          -a, --show-all        show removed elements too
+          -i, --show-index      show the absolute index of the item
+          -c COUNT, --count COUNT
 
 examples
 ::::::::
@@ -272,16 +272,16 @@ tail command
 
 ::
 
-	usage: lst tail [-h] [-a] [-i] [-c COUNT] LIST
+        usage: lst tail [-h] [-a] [-i] [-c COUNT] LIST
 
-	positional arguments:
-	  LIST
+        positional arguments:
+          LIST
 
-	optional arguments:
-	  -h, --help            show this help message and exit
-	  -a, --show-all        show removed elements too
-	  -i, --show-index      show the absolute index of the item
-	  -c COUNT, --count COUNT
+        optional arguments:
+          -h, --help            show this help message and exit
+          -a, --show-all        show removed elements too
+          -i, --show-index      show the absolute index of the item
+          -c COUNT, --count COUNT
 
 examples
 ::::::::
@@ -325,21 +325,21 @@ filter command
 
 ::
 
-	usage: lst filter [-h] [-a] [-i] [-t TAG [TAG ...] | -T TAG [TAG ...]]
-			  LIST [QUERY [QUERY ...]]
+        usage: lst filter [-h] [-a] [-i] [-t TAG [TAG ...] | -T TAG [TAG ...]]
+                          LIST [QUERY [QUERY ...]]
 
-	positional arguments:
-	  LIST
-	  QUERY
+        positional arguments:
+          LIST
+          QUERY
 
-	optional arguments:
-	  -h, --help            show this help message and exit
-	  -a, --show-all        show removed elements too
-	  -i, --show-index      show the absolute index of the item
-	  -t TAG [TAG ...], --tags TAG [TAG ...]
-				show elements that have *any* of the tags
-	  -T TAG [TAG ...], --all-tags TAG [TAG ...]
-				show elements that have *all* of the tags
+        optional arguments:
+          -h, --help            show this help message and exit
+          -a, --show-all        show removed elements too
+          -i, --show-index      show the absolute index of the item
+          -t TAG [TAG ...], --tags TAG [TAG ...]
+                                show elements that have *any* of the tags
+          -T TAG [TAG ...], --all-tags TAG [TAG ...]
+                                show elements that have *all* of the tags
 
 examples
 ::::::::
@@ -423,13 +423,13 @@ configure and as values the configuration for those lists, for example:
 
 if the path to a list doesn't exists it's created::
 
-	{
-	    "lists": {
-		"links": {
-		    "format": "src/me/links/%Y/%m.links" // strftime format can be used
-		}
-	    }
-	}
+        {
+            "lists": {
+                "links": {
+                    "format": "src/me/links/%Y/%m.links" // strftime format can be used
+                }
+            }
+        }
 
 
 fields
