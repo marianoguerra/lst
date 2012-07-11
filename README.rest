@@ -416,7 +416,7 @@ the file contains a JSON object with the configuration of the program with
 the following subojects:
 
 lists
-.....
+:::::
 
 the lists object contains as keys the names of the lists that you want to
 configure and as values the configuration for those lists, for example:
@@ -433,7 +433,7 @@ if the path to a list doesn't exists it's created::
 
 
 fields
-::::::
+......
 
 format
         is the path to the list, you can use *~* to refer to the user's home
@@ -443,16 +443,16 @@ details
 -------
 
 license
-.......
+:::::::
 
 MIT + optional beer for the author
 
 author
-......
+::::::
 
 marianoguerra
 
 tools
-.....
+:::::
 
 python 3
